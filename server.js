@@ -34,7 +34,7 @@ for (const p of PROVIDERS) {
       console.log(`  ⚠️  No getStreams: ${p.id}`);
     }
   } catch (err) {
-    console.log(`  ❌ Failed: ${p.id} — ${err.message?.substring(0, 60)}`);
+    console.log(`  ❌ Failed: ${p.id} — ${err.message}`);
   }
 }
 console.log(`\n  ${loadedProviders.length}/${PROVIDERS.length} providers loaded\n`);
